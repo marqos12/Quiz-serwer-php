@@ -1,0 +1,726 @@
+{
+	"info": {
+		"_postman_id": "8fb58f07-4944-4bfc-8222-7da7cd0493c3",
+		"name": "webProject 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rejestracja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"stefan\",\n\t\"surname\":\"stefan\",\n\t\"email\":\"1232@gmail.ocm\",\n\t\"password\":\"123123\",\n\t\"c_password\":\"123123\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"disabled": true
+						},
+						{
+							"key": "c_password",
+							"value": "123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"1232@gmail.ocm\",\n\t\"password\":\"123123\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFhZjkyMjEyODhjZjM1YmY3YmY2OGNkYmUwNWRhYzQyZTEyNTBiYmIxMTVlYjNiMWYyNjY4NzRiZTkwYTVlZjcyYWRkYTU1MWRmMmJiNTM3In0.eyJhdWQiOiIxIiwianRpIjoiMWFmOTIyMTI4OGNmMzViZjdiZjY4Y2RiZTA1ZGFjNDJlMTI1MGJiYjExNWViM2IxZjI2Njg3NGJlOTBhNWVmNzJhZGRhNTUxZGYyYmI1MzciLCJpYXQiOjE1NDg0MTMxOTksIm5iZiI6MTU0ODQxMzE5OSwiZXhwIjoxNTc5OTQ5MTk5LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.wnwfoqGwT7KtabOCZ1e8CrbRPEqbXMA2CBQg7bu5X3CADyl63O9CWX78PH1lJ6DDXIlv6BjOweHYCm4l5kAQZD7SIR0oUI5nF-2imo120A0mxReVl0fvpnUfPxBvUmw0XtCGuXc5zyUMv4MV5Ebbm1eUK08g14xweUJU9RhpCXtYA0nZ8ECbc4EX15JeZIFu5tJ7KxsumkiUpngIYheLnBK_6rHNbl_NRnOyCaYpwoadUPya3r3Q-900v_gR-fsuItLK0qiCbVgWNJiyJToHK0DdzwVsV5mLZjlG7twTfKEB1OZ-N2LcCe4yBoBGT854YTQvulzQK81jerGJCCtivcK9Ispdli_NQyvrZGcKErmtOTNmTXa_PzZ3nJEXoffrojvzASnp4ae3rKeCw0J9RcpFQnMS3WwQGD_f0WH6CGNfGv9pTKLGZqOEuR6oDdiZ20uqpNyKXUjaI6Xiuheb1lGsgdK1UkGkWihb4T10utSTjGqMR-Vaj3Nfy5EjwwD7wSUm8ARtPiSVb8pukxQdGEz22e-Azt_3_-8Fmrh7NPf3v6vz5o_1npwjvqA4je5jzo0KRAV_1qc9HLJI7QDne1tkfCnJckrOd9saDYztnLXQYAy3LZWWzkUVjfPgZGDMGadkniKQKtxcepuiZC2GjDF7DtglIdTW__Bs8QBttbg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createSubject",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"staszek888\",\n\t\"idAuthor\":\"1\",\n\t\"noQuestions\":10,\n\t\"multipleChoice\":false,\n    \"separatePage\":false,\n    \"canBack\":false,\n    \"limitedTime\":false,\n    \"time\":0,\n    \"course\":\"12EF-DI\",\n    \"description\":\"asd\",\n    \"shared\":false,\n    \"categorysed\":false,\n    \"randomize\":false\n}"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get number of questions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/subject/noQt/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"subject",
+						"noQt",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get quiz details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/subject/details/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"subject",
+						"details",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "quiz list for course",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/subject/list/course/1EF-DI",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"subject",
+						"list",
+						"course",
+						"1EF-DI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "quiz list for author",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/subject/list/author/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"subject",
+						"list",
+						"author",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user result",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/subject/result/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"subject",
+						"result",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Subject",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"name\": \"staszek3123\",\n    \"idAuthor\": 2,\n    \"noQuestions\": 11,\n    \"multipleChoice\": 1,\n    \"separatePage\": 1,\n    \"canBack\": 0,\n    \"limitedTime\": 0,\n    \"time\": 0,\n    \"course\": \"12EF-DI\",\n    \"description\": \"asd\",\n    \"shared\": 0,\n    \"categorysed\": 0,\n    \"randomize\": 0,\n    \"created_at\": \"2019-01-25 18:14:39\",\n    \"updated_at\": \"2019-01-25 18:14:39\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create question with answer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idSubject\":1,\n\t\"category\":\"wtf\",\n\t\"text\":\"napis\",\n\t\"code\":\"\",\n\t\"image\":\"\",\n\t\"answers\":[\n\t\t{\n\t\t\t\"text\":\"napis1\",\n\t\t\t\"status\":1\n\t\t},\n\t\t{\n\t\t\t\"text\":\"napis2\",\n\t\t\t\"status\":1\n\t\t},\n\t\t{\n\t\t\t\"text\":\"napis3\",\n\t\t\t\"status\":1\n\t\t},\n\t\t{\n\t\t\t\"text\":\"napis4\",\n\t\t\t\"status\":1\n\t\t}]\n}"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check answer bez autoryzacji",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":2,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":3,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":4,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":5,\n\t\t\t\t\"value\":0\n\t\t\t}]\n\t},\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":6,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":7,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":8,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":9,\n\t\t\t\t\"value\":0\n\t\t\t}]\n\t},\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":10,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":11,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":12,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":13,\n\t\t\t\t\"value\":0\n\t\t\t}]\n\t},\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":14,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":15,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":16,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":17,\n\t\t\t\t\"value\":1\n\t\t\t}]\n\t}\n]"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question/checkWOR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question",
+						"checkWOR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check answers z autoryzacja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":2,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":3,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":4,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":5,\n\t\t\t\t\"value\":0\n\t\t\t}]\n\t},\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":6,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":7,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":8,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":9,\n\t\t\t\t\"value\":0\n\t\t\t}]\n\t},\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":10,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":11,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":12,\n\t\t\t\t\"value\":0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":13,\n\t\t\t\t\"value\":0\n\t\t\t}]\n\t},\n\t{\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"id\":14,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":15,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":16,\n\t\t\t\t\"value\":1\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"id\":17,\n\t\t\t\t\"value\":1\n\t\t\t}]\n\t}\n]"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question/checkWR",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question",
+						"checkWR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get questions with answers for quiz",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question/answerWS/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question",
+						"answerWS",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get questions withaout status for quiz",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question/WAFQ/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question",
+						"WAFQ",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update question with answers",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 12,\n        \"idSubject\": 2,\n        \"category\": \"jurku\",\n        \"text\": \"napis\",\n        \"code\": null,\n        \"image\": null,\n        \"created_at\": \"2019-01-26 12:08:53\",\n        \"updated_at\": \"2019-01-26 12:08:53\",\n        \"answers\": [\n            {\n                \"id\": 2,\n                \"idQuestion\": 12,\n                \"text\": \"napis1123\",\n                \"status\": 0,\n                \"created_at\": \"2019-01-26 12:08:53\",\n                \"updated_at\": \"2019-01-26 12:08:53\"\n            },\n            {\n                \"id\": 3,\n                \"idQuestion\": 12,\n                \"text\": \"napis2222\",\n                \"status\": 0,\n                \"created_at\": \"2019-01-26 12:08:53\",\n                \"updated_at\": \"2019-01-26 12:08:53\"\n            },\n            {\n                \"id\": 4,\n                \"idQuestion\": 12,\n                \"text\": \"napis3321\",\n                \"status\": 1,\n                \"created_at\": \"2019-01-26 12:08:53\",\n                \"updated_at\": \"2019-01-26 12:08:53\"\n            },\n            {\n                \"id\": 5,\n                \"idQuestion\": 12,\n                \"text\": \"napis44444\",\n                \"status\": 0,\n                \"created_at\": \"2019-01-26 12:08:53\",\n                \"updated_at\": \"2019-01-26 12:08:53\"\n            }\n        ]\n    }"
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get randomized questions withaout status for quiz",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question/random/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question",
+						"random",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get question with answers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/question/WA/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"question",
+						"WA",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDemoDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ3MDU3MWUwZWYxZTllYWZhNTljMTk1MGJkYmU0MmE4NjE3OGI5NTliNzc0NjEwOTgxNDE0ZmNhOTJkMjJlNWY1OWFiMjY3NWM1NjU5MjcyIn0.eyJhdWQiOiIxIiwianRpIjoiZDcwNTcxZTBlZjFlOWVhZmE1OWMxOTUwYmRiZTQyYTg2MTc4Yjk1OWI3NzQ2MTA5ODE0MTRmY2E5MmQyMmU1ZjU5YWIyNjc1YzU2NTkyNzIiLCJpYXQiOjE1NDg0Mzk5MzMsIm5iZiI6MTU0ODQzOTkzMywiZXhwIjoxNTc5OTc1OTMzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Fh6IBGYvSkW-YZeDO8KzdtVRCldwDecoSnRouUu8M4WqHOhUJtu7Yx3CwbR_uu-JaTjOpWueGU7C_SnefYc_j5n2kgH8oalTbdsDdEBTAddYKCypZjMe9M-UvSC54QJ8Z8JpUfYnt1VhOLict8vgy2Oe1L79fGJekhqr_aeOtJdSDRojCCpswcLKs04SzqjxrqnocS-xQ66ysFOicH5HECl7CYhzzL_FoHf5hLuE4G7vTHl5ULDQtXbiMaBQwjp0qJ7FoCKyisyeD4SX_NQ8L1u2-R9_ZD_Jc0XrJBsy8nbRHry7UJmOfHOXQaz-Eo063YXQCOqq_2us25cMcqavDEFzWyGwkRyj164BFDA8w-_bPQ9MoEEB16aHz9hRHqT8B9QNY2JfHItQ6uMIZew6ime941qbQKHWXhKEkEmQiYQXBBzP4j1X9uE_BajHjsl_BNKrlWAT3oTkmxi84i25m3GihAkTTtke9cmusAl9MiQcmkOZSQ5Yhd39tT7CEDCzJBD_CgzSPs6QVEWo-vjeWFdipIYKVPna_Yp8HaPvrqnR3JFVOCWUy-Hl8x8BurgUn3Nh2Vs2VHKiLeikfxcqVfPmYLnYy8vQrcI7hO4m932p4h4unXZ0VYMNrTwe_gfbiRju25xFqTfeOZxePJkFA0_EMFvRhWit2AAdCh17Ohw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/demo/details/demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"demo",
+						"details",
+						"demo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get courses list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE5ZmM1ZDE2YmQ0N2IwZDJmYzQ1ZWY0NDdmZTM2ZmQyZjI1MmI3OTRmOGZmZDY4MGY2YmYzMGRiNDI3N2Q2OGUwMmMxOTNkZWUyZjZkZmUzIn0.eyJhdWQiOiIxIiwianRpIjoiMTlmYzVkMTZiZDQ3YjBkMmZjNDVlZjQ0N2ZlMzZmZDJmMjUyYjc5NGY4ZmZkNjgwZjZiZjMwZGI0Mjc3ZDY4ZTAyYzE5M2RlZTJmNmRmZTMiLCJpYXQiOjE1NDg1NzQ5NjIsIm5iZiI6MTU0ODU3NDk2MiwiZXhwIjoxNTgwMTEwOTYyLCJzdWIiOiIxMyIsInNjb3BlcyI6W119.TVkeQdJxaQAIDT7fSlEUEN1c4uNj_YcOGGelFp-z8ksJe3L_N3POf0KDnGU8H1finrXTG2Z0cQfyVn4W5qbo9t5qlIbQyKVVBA1hrO8ZSS9v59LtrjE64SAWGy0F4zeJR5t_Xme-cd0Q1y7mNHqgrfOe086pql5I9DUVS3QSgKoM47Vj1VrJiCdmB639wGF4cWM4zGHYiqUD-Fy-dZ65KbqWcfMsvyyRnUMZc8s74B4uzV9dQ2jbbko1wF88SPNHQiA9Fuol8vX6BWsVE_Jd8v8wfGvHfqdj3JZtprYm7oalUbYNxryhRjWfTYh6W7rTCULPKyaEr5vB5NTYQF3Wxqq5---gAFaqPPOv3t9z6r64J_UQbwkiNtJ1CrmAfNePieErONkbXWDeBUoEZBAK-wPa8g4TrtpVc-sZMkdVAGfVcPXuvUsRKw5CTJ4I13hnvKMdIwyJMZOz8xNc4W2pld1nvwa6iE_rxb9Mz_ls4n7ZKsnV25vWT_3qutLf-6XGH0Y5-BEfYMBRnDMJubhpKyFW7XZ9gelBMQxgwd0shnLd81smAxsP6GW4r1EAs1kBtY0tps_ynwOGz7ik5AA8hLsnH1xnp4hPc5Q9i2nK5pAlXW4-oPW_kOQTCZnHE3AJFQkBuxlsOuvjQX1LQ6sFQYlOVp66Q21y63hpSq93ZRE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/corkaKupagi/public/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"corkaKupagi",
+						"public",
+						"api",
+						"courses"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
